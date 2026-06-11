@@ -1,0 +1,28 @@
+POST http://localhost:8081/api/categories
+{
+  "name":"Electronics"
+}
+
+POST http://localhost:8081/api/brands
+{
+  "name":"Apple"
+}
+
+POST http://localhost:8081/api/subcategories
+{
+  "name":"Mobile",
+  "categoryId":1
+}
+
+product created test
+
+POST http://localhost:8081/api/products
+{
+  "name":"iPhone 16",
+  "description":"Latest Apple Phone",
+  "price":85000,
+  "stock":20,
+  "categoryId":1,
+  "subCategoryId":1,
+  "brandId":1
+}
